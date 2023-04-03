@@ -1,0 +1,21 @@
+Source: pg-gvm
+Priority: optional
+Maintainer: Mohammad Razavi <mrazavi64@gmail.com>
+Build-Depends: debhelper-compat (= 13), cmake, pkg-config, libical-dev, libglib2.0-dev, libgvm-dev (>= 22.4.4), postgresql-server-dev-14
+Standards-Version: 4.6.2
+Section: database
+Homepage: https://community.greenbone.net/
+Vcs-Browser: https://github.com/greenbone/pg-gvm
+Vcs-Git: https://github.com/greenbone/pg-gvm.git
+Rules-Requires-Root: no
+
+Package: postgresql-14-gvm
+Architecture: any
+Depends: postgresql-14, ${shlibs:Depends}, ${misc:Depends}
+Description: gvm postgreql extensions with helper functions
+ The Greenbone Vulnerability Management Solution (previously known as
+ Open Vulnerability Assessment System) is a modular security auditing tool,
+ used for testing remote systems for vulnerabilities that should be fixed.
+ .
+ This package contains the postgresql extensions with helper functions
+ in PostgreSQL and ical object manipulation tools.
